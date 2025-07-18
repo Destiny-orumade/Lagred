@@ -56,7 +56,7 @@ const HeroSection = () => {
         </div>
 
 
-        <div className="absolute top-2/12 -left-6.5 z-10 space-y-6 text-sm text-black [writing-mode:vertical-rl] rotate-180">
+        <div className="absolute top-2/12 -left-6.5 z-10 space-y-10 text-sm text-black [writing-mode:vertical-rl] rotate-180">
           <span>Facebook</span>
           <span>Instagram</span>
           <span>YouTube</span>
