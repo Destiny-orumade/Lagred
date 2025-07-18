@@ -9,7 +9,10 @@ const HeroSection = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          entry.target.classList.toggle("animate-fadeInUp", entry.isIntersecting);
+          entry.target.classList.toggle(
+            "animate-fadeInUp",
+            entry.isIntersecting
+          );
         });
       },
       { threshold: 0.1 }
@@ -19,15 +22,15 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="font-sans">
+     <div className="font-sans">
 
       <header className="bg-red-200 text-center text-black py-2 text-sm">
         We're Offering 20% OFF - Today Only!
       </header>
 
 
-      <section className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="flex justify-between items-center p-4 mx-4 md:mx-10">
+      <section className="mx-4 md:mx-10 my-5 relative">
+        <div className="flex justify-between items-center p-4 bg-white w-full z-50 relative">
           <h1 className="text-3xl md:text-4xl font-bold text-black">
             Layred<span className="text-blue-600 text-2xl">.</span>
           </h1>
@@ -38,16 +41,12 @@ const HeroSection = () => {
             <a href="#">Pages</a>
             <a href="#">Blog</a>
           </nav>
-
-           <div>
+               <div>
             <select className=" rounded-md p-2 text-gray-600 relative left-50">
-              <option value="" >
-                English
-              </option>
+              <option value="">English</option>
               <option value="">China</option>
-                </select>
-           </div>
-
+            </select>
+          </div>
           <div className="flex items-center gap-4 text-gray-600 text-xl">
             <AiOutlineSearch />
             <FaUser />
@@ -155,7 +154,7 @@ const HeroSection = () => {
           </div>
 
        
-          <div className="absolute bottom-19 right-30 md:right-10 fade-in opacity-0">
+          <div className="absolute bottom-15 right-30 md:right-10 fade-in opacity-0">
             <Image
               src="/img6.webp"
               alt="Small model"
@@ -198,3 +197,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
